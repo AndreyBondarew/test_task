@@ -35,7 +35,7 @@ class _ListSearchItem extends StatelessWidget {
                 ),
                 if (inFavorite != null)
                   SvgPicture.asset(
-                    inFavorite! ? Assets.iconsFavoriteGreen : Assets.iconsFavorite,
+                    inFavorite! ? Assets.iconsFavoriteGreen : Assets.iconsFavoriteGrey,
                   )
               ],
             ),
