@@ -32,6 +32,7 @@ class _SearchResult extends StatelessWidget {
                 ),
                 Expanded(
                   child: ListView.builder(
+                    padding: const EdgeInsets.symmetric(vertical: 25),
                     itemBuilder: (context, index) => _ListSearchItem(
                       onTap: () => context.read<HomePageCubit>().toggleFavorite(state.searchResult[index]),
                       data: state.searchResult[index],

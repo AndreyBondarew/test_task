@@ -118,7 +118,6 @@ class _HomePageState extends State<HomePage> {
               SafeArea(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
-                    vertical: 25.0,
                     horizontal: 16.0,
                   ),
                   child: Column(

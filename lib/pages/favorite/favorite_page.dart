@@ -14,7 +14,7 @@ import 'package:test_task/widgets/swipe_widget/swipe_widget.dart';
 part 'part/favorite_list_item.dart';
 
 class FavoritePage extends StatelessWidget {
-  const FavoritePage({Key? key}) : super(key: key);
+  const FavoritePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,6 @@ class FavoritePage extends StatelessWidget {
                 SafeArea(
                   child: switch (state.pageStatus) {
                     PageStatus.init => const SizedBox.shrink(),
-                    // TODO: Handle this case.
                     PageStatus.loading => const Align(
                         alignment: Alignment.topCenter,
                         child: Padding(
@@ -48,7 +47,6 @@ class FavoritePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                    // TODO: Handle this case.
                     PageStatus.loaded => ListView.builder(
                         padding: const EdgeInsets.symmetric(
                           vertical: 25.0,

@@ -33,6 +33,7 @@ class _HistoryList extends StatelessWidget {
                 ),
                 Expanded(
                   child: ListView.builder(
+                    padding: const EdgeInsets.symmetric(vertical: 25),
                     itemBuilder: (context, index) => ListHistoryItem(
                       data: state.histories[index],
                       onTap: () => onSelect(state.histories[index].searchQuery),
