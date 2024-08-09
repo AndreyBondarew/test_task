@@ -23,7 +23,7 @@ class _HistoryList extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 5.0),
+                  padding: const EdgeInsets.symmetric(vertical: 16.0),
                   child: Text(
                     AppStrings.historyListTitle,
                     style: AppTextStyles.regular16(
@@ -33,7 +33,7 @@ class _HistoryList extends StatelessWidget {
                 ),
                 Expanded(
                   child: ListView.builder(
-                    padding: const EdgeInsets.symmetric(vertical: 25),
+                    padding: const EdgeInsets.only(bottom: 25),
                     itemBuilder: (context, index) => ListHistoryItem(
                       data: state.histories[index],
                       onTap: () => onSelect(state.histories[index].searchQuery),
